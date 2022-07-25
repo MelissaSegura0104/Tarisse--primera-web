@@ -2,11 +2,9 @@ html{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 header{
-    grid-area: header;
     background-color: rgb(255, 255, 255);
     display: flex;
     width: 100vw;
@@ -34,7 +32,6 @@ li:hover{
 }
 
 nav ul li a {
-    grid-area: nav;
     font-family: 'Secular One', sans-serif;
     text-decoration: none;
     text-decoration-line: none;
@@ -43,6 +40,42 @@ nav ul li a {
     display: inline;
 
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+main h1{
+    background-image: url(../media/slide1.jpg);
+    background-size:cover;
+    font-family: 'Secular One', sans-serif;
+    font-size: 4.5rem;
+    color: rgb(55, 42, 36);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+}
+main h2{
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(55, 42, 36);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-bottom: 3rem;
+}
+ video{
+    display: flex;
+    align-self: center;
+    padding-bottom: 5rem;
+   
+}
+
 footer{
     grid-area: footer;
      background-color: white;
@@ -70,68 +103,8 @@ footer{
      height: 50px;
      justify-content: end;
      margin-left: 0%;
-    
  }
- .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   
- }
-
- main{
-    margin-bottom: 2rem;
- }
-
- main h1{
-    background-image: url(./media/slide5.jpg);
-    font-family: 'Secular One', sans-serif;
-    font-size: 4.5rem;
-    color: rgb(55, 42, 36);
-    opacity:  90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5rem;
-
- }
- main img{
-    grid-area: main;
-    display: flex;
-  padding: 1.5rem;
-   border: 1px;
-   border-radius: 2px;
-    height:  300px;
-    width: 450px;
- }
-
-
- .card{
-    margin-left: 1rem;
-    margin: 1rem;
-    grid-area: card;
-    background-color: rgb(249, 228, 231);
-    width: 500px;
-    height: 420px;
-    border-radius: 3rem;}
-
-h3{
-    text-align: center;
-    margin-top: -.5rem;
-    font-family: 'Secular One', sans-serif;
-    color: rgb(33, 32, 32);
-    margin-bottom: 1rem;
-    }
- p{
-    text-align: center;
-    margin-top: -.5rem;
-    font-size: 1.2rem;
-    color: gray;
-    font-family: 'Secular One', sans-serif;
-    
-    margin-bottom: 1rem;
-}
-@media screen and (max-width:576px) {
+ @media screen and (max-width:576px) {
  
     
     div .webcontainer{
@@ -142,7 +115,13 @@ h3{
       height: 6vh;
     }
    
-   
+   main h1 {
+    font-size: 2rem;
+   }
+   main h2{
+    font-size: 20px;
+    padding: 1rem;
+   }
   nav ul {
     display:flex;
     height: 2vh;
@@ -160,8 +139,12 @@ h3{
        }
 
    main h1{
-    font-size: 3rem;
+    height: 100px;
     
+   }
+   video{
+    height: 300px;
+    width: 450px;
    }
    
  footer{
@@ -216,6 +199,13 @@ h3{
    }
    main h1{
     font-size: 3rem;
+   }
+   main h2{
+    padding: 1rem;
+   }
+   video{
+    width: 500px;
+    height: 300px;
    }
 
  footer{

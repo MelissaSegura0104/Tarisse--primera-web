@@ -58,7 +58,7 @@ main{
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-image:url(./media/slide3.jpg);
+    background-image:url(../media/slide3.jpg);
     background-size: auto;
 }
    
